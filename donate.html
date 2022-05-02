@@ -1,50 +1,69 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>The Amy Beach Piano Foundation</title>
-	<link href="interhtmlfinal.css" type="text/css" rel="stylesheet">
-</head>
+<html lang="en">
+    <head>
+        <title>The Amy Beach Piano Foundation</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="images/favicon-1.png">
+    </head>
 <body>
-	<h1>Donate</h1>
-		<nav>
-			<ul>
-				<li><a href="interhtmlfinal.html">Home</a></li>
-				<li><a href="beachbio.html">Biography</a></li>
-				<li><a href="pianoworks.html">Table of Piano Works</a></li>
-				<li><a href="donate.html">Donate</a></li>
-			</ul>
-		</nav>
-	<form method="POST" action="mailto:michael.brady3@g.austincc.edu">
-		<h2>
+	<div class="pagecontainer">
+		<div class="contentwrap" style="background-image: linear-gradient(rgba(123,143,153,0), rgba(123,143,153,.9) 10%);">
+	<nav>
+			<a href="index.html"><img src="images/logo-1.png" class="logo"></a>
+			<a href="index.html" class="navitem">Home</a>
+			<a href="beachbio.html" class="navitem">Biography</a>
+			<a href="pianoworks.html" class="navitem">Piano Works</a>
+			<a href="donate.html" class="navitem active">Donate</a>
+			<div class="navbar">	
+				<div class="container nav-container">
+					<input class="checkbox" type="checkbox" name="" id="" />
+					<div class="hamburger-lines">
+					  <span class="line line1"></span>
+					  <span class="line line2"></span>
+					  <span class="line line3"></span>
+					</div>  
+					<div class="menu-items">
+						<li><a href="index.html" class="inactive">Home</a></li>
+						<li><a href="beachbio.html" class="inactive">Biography</a></li>
+						<li><a href="pianoworks.html" class="inactive">Piano Works</a></li>
+						<li><a href="donate.html" class="active">Donate</a></li>
+					  </div>
+				</div>
+			  </div>
+	</nav>
+	<div class="pad"></div>
+	<form>
+		<h1>
 		Basic Information
-		</h2>
-		<table>
-			<tr>
-				<td>Name:<input type="text"></td>
-				<td>Street:<input type="text"></td>
-				<td>City:<input type="text"></td>
-				<td>Zip code:<input type="text"></td>
-				<td>Country:<input type="text"></td>
-				<td>Donation Amount:<input type="text"></td>
-			</tr>
-		</table>
-		<h2>
+		</h1>
+			<label>Name:</label>
+			<input type="text">
+			<label>Street:</label>
+			<input type="text">
+			<label>City:</label>
+			<input type="text">
+			<label>Zip code:</label>
+			<input type="text">
+			<label>Country:</label>
+			<input type="text">
+			<label>Donation Amount:</label>
+			<input type="text">
+		<h1>
 		Credit/Debit Card Information
-		</h2>
-		<table>
-			<tr>
-				<td><select>
-					<option value="visa">Visa</option>
-					<option value="mastercard">Mastercard</option>
-					<option value="americanexpress">American Express</option>
-				</select></td>
-			</tr>
-			<tr>
-			<td>Card Number:<input type="text"></td>
-			</tr>
-			<tr>
-			<td>Expiration month:
-				<select>
+		</h1>
+			<select>
+				<option value="visa">Visa</option>
+				<option value="mastercard">Mastercard</option>
+				<option value="americanexpress">American Express</option>
+			</select>
+			
+		<label>Card Number:</label><input type="text"><br>
+			
+		<label style="display: inline;">Expiration month:</label>
+				<select style="margin-left: 0;">
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -57,11 +76,10 @@
 					<option value="10">10</option>
 					<option value="11">11</option>
 					<option value="12">12</option>
-				</select></td>
-			</tr>
-			<tr>
-			<td>Expiration year:
-				<select>
+				</select>
+			
+		<label style="display: inline; margin-left: 15px;">Expiration year:</label>
+				<select style="margin-left: 0;">
 					<option value="2010">2010</option>
 					<option value="2011">2011</option>
 					<option value="2012">2012</option>
@@ -83,31 +101,19 @@
 					<option value="2028">2028</option>
 					<option value="2029">2029</option>
 					<option value="2030">2030</option>
-				</select></td>
-			<tr>
-			<td><p>Comments:</p>
-			<textarea rows="5" cols="30"></textarea></td>
-			</tr>
-			<tr>
-				<td><input type="submit" value="Submit">
-				<input class="reset" type="reset"  value="Reset"></td>
-		</table>
+				</select>
+			
+		<label>Comments (if any):</label>
+			<textarea rows="5" cols="30"></textarea>
+			<br>
+			<input class="button" type="submit" value="Submit">
+			<input class="button" type="reset"  value="Reset" style="margin-left: 0;">
 	</form>
+	</div>
 	<footer>
-	<p class="footer">
 	Headquarters: Boston, Massachusetts
-	&copy; The Amy Beach Piano Foundation 2021</p>
+	&copy; The Amy Beach Piano Foundation 2021
 	</footer>
+	</div>
 </body>
-<!--The final project builds on several previous assignments. Create a website that displays:
-
-a CSS styled, horizontal menu with hover effects at the top.
-a styled HTML table
-a styled HTML form that collects all the information from the previous assignment.
-a styled <footer> with copyright information
-This project is all about CSS style, and making the elements on your page look fantastic using CSS. Since you already have the HTML code needed from previous assignments you can spend most of your time on the style of the page.
-
-Make this website about something you genuinely care about, and place a link to this website on your Webtrain portfolio page in the Portfolio projects section. You are beginning to build out your portfolio.
-
-Be creative - for example, if your site is about State Parks that you love, use the HTML table to display lists of parks with their different features...-->
 </html>
